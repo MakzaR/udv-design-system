@@ -1,0 +1,74 @@
+.navbar {
+    display: grid;
+    grid-template-areas: "name menu";
+    padding: 37px 130px 37px 130px;
+    font-size: 18px;
+    line-height: 25px;
+    background-color: transparent;
+}
+
+.navbar.theme-light {
+    --color-logo: #000000;
+    --color-system_name: #626262;
+    --color-item: #302E2E;
+}
+.navbar.theme-dark {
+    --color-logo: #00D29D;
+    --color-system_name: #BEBEBE;
+    --color-item: #DFDFDF;
+}
+
+.navbar.grey {
+    background-color: #EDEDED;
+    padding-left: 30px;
+}
+
+.name {
+    grid-area: name;
+    display: flex;
+    justify-content: start;
+    font-weight: bolder;
+}
+
+.logo {
+    text-decoration: none;
+    padding-right: 26px;
+    color: var(--color-logo);
+}
+
+/*.logo.green {*/
+/*    color: #00D29D;*/
+/*}*/
+
+.system_name {
+    color: var(--color-system_name);
+}
+
+/*.system_name.light {*/
+/*    color: #BEBEBE;*/
+/*}*/
+
+.menu {
+    grid-area: menu;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.item {
+    text-decoration: none;
+    margin-left: 40px;
+    font-weight: 400;
+    color: var(--color-item);
+}
+
+/*.item.light {*/
+/*    color: #DFDFDF;*/
+/*}*/
+
+.activeLink {
+    color: #009A73;
+}
+
+.activeLink.components {
+    color: #00B98A;
+}
