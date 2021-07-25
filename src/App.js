@@ -1,23 +1,32 @@
-import logo from './logo.svg';
 import './App.css';
+import {BrowserRouter as Router, Switch, Route, Redirect} from "react-router-dom";
+
+import Home from "./components/pages/Home/Home";
+import Components from "./components/pages/ReactComponents/Components";
+import Figma from "./components/pages/Figma/Figma";
+import Patterns from "./components/pages/Patterns/Patterns";
+import UX from "./components/pages/UX/UX";
+import Research from "./components/pages/Research/Research";
+import Articles from "./components/pages/Articles/Articles";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+        <Switch>
+            <Route path='/home' component={Home}/>
+            <Route path='/components/react' component={Components}/>
+            <Route path='/components/figma' component={Figma}/>
+            <Route path='/patterns' component={Patterns}/>
+            <Route path='/ux' component={UX}/>
+            <Route path='/research' component={Research}/>
+            <Route path='/articles' component={Articles}/>
+
+            <Redirect from='/components' to='/components/react'/>
+            <Redirect from='/' to='/home'/>
+
+        </Switch>
+      </Router>
     </div>
   );
 }
