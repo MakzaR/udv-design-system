@@ -1,0 +1,33 @@
+.page {
+    text-align: left;
+}
+
+.heading {
+    font-family: Open Sans, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 65px;
+    color: #000000;
+    margin: 0 0 0 130px;
+}
+
+.filters {
+    margin: 20px 0 29px 130px;
+    display: flex;
+}
+
+.filtersItem {
+    margin: 0 96px 0 0;
+}
+
+svg {
+    margin: 0 13px 0 0;
+}
+
+.content {
+    padding: 0 0px 0 130px;
+    background-color: #F3F3F3;
+    display: flex;
+    flex-wrap: wrap;
+}
