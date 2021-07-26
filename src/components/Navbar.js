@@ -1,6 +1,7 @@
 import {NavLink, useLocation} from "react-router-dom";
 
-import "./Navbar.css"
+import "./Navbar.css";
+import Submenu from "./Submenu";
 
 export default function Navbar() {
     const location = useLocation();
@@ -24,11 +25,12 @@ export default function Navbar() {
                 </span>
             </div>
             <div className="menu">
-                <NavLink to='/components'
+                <NavLink to='/components' id="components"
                          className={checkPage("home", "item", "light")}
                          activeClassName="activeLink components">
                     Компоненты
                     <span className={checkPage("components", "polygon", "green")}/>
+                    <Submenu/>
                 </NavLink>
                 <NavLink to='/patterns'
                          className={checkPage("home", "item", "light")}

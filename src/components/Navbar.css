@@ -1,22 +1,12 @@
 .navbar {
     display: grid;
     grid-template-areas: "name menu";
-    padding: 37px 130px 37px 130px;
+    grid-template-rows: 100px;
+    padding: 0 130px;
     font-size: 18px;
     line-height: 25px;
     background-color: transparent;
 }
-
-/*.theme-light {*/
-/*    --color-logo: #000000;*/
-/*    --color-system_name: #626262;*/
-/*    --color-item: #302E2E;*/
-/*}*/
-/*.theme-dark {*/
-/*    --color-logo: #00D29D;*/
-/*    --color-system_name: #BEBEBE;*/
-/*    --color-item: #DFDFDF;*/
-/*}*/
 
 .navbar.grey {
     background-color: #EDEDED;
@@ -25,6 +15,7 @@
 
 .name {
     grid-area: name;
+    align-self: center;
     display: flex;
     justify-content: flex-start;
     font-weight: bolder;
@@ -38,6 +29,7 @@
 
 .logo.green {
     color: #00D29D;
+    padding-right: 10px;
 }
 
 .system_name {
@@ -50,6 +42,7 @@
 
 .menu {
     grid-area: menu;
+    align-self: center;
     display: flex;
     justify-content: flex-end;
 }
@@ -88,4 +81,44 @@
 
 .activeLink.components {
     color: #00B98A;
+}
+
+.submenu {
+    position: absolute;
+    display: none;
+}
+
+.submenu_item {
+    display: flex;
+    color: #302E2E;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    text-decoration: none;
+    align-items: center;
+}
+
+.submenu_item:hover {
+    background: #F5F5F5;
+}
+
+.react {
+    padding-left: 10px;
+    margin-right: 10px;
+}
+
+.figma {
+    padding-left: 17px;
+    margin-right: 15px;
+}
+
+#components:hover .submenu {
+    display: grid;
+    box-sizing: border-box;
+    grid-template-areas: "react"
+                         "figma";
+    grid-template-rows: 40px 40px;
+    grid-auto-columns: 225px;
+    background: #FFFFFF;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.25);
 }
