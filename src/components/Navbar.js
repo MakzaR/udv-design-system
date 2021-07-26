@@ -20,7 +20,7 @@ export default function Navbar() {
                     UDV
                 </NavLink>
                 <span
-                    className={checkPage("home", "system_name", "light")}>
+                    className={checkPage("home", "system-name", "light")}>
                     Дизайн-система
                 </span>
             </div>

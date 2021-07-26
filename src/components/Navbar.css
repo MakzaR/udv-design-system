@@ -6,6 +6,7 @@
     font-size: 18px;
     line-height: 25px;
     background-color: transparent;
+    z-index: 2;
 }
 
 .navbar.grey {
@@ -18,7 +19,7 @@
     align-self: center;
     display: flex;
     justify-content: flex-start;
-    font-weight: bolder;
+    font-weight: 600;
 }
 
 .logo {
@@ -32,11 +33,11 @@
     padding-right: 10px;
 }
 
-.system_name {
+.system-name {
     color: #626262;
 }
 
-.system_name.light {
+.system-name.light {
     color: #BEBEBE;
 }
 
@@ -88,7 +89,7 @@
     display: none;
 }
 
-.submenu_item {
+.submenu-item {
     display: flex;
     color: #302E2E;
     font-size: 16px;
@@ -98,7 +99,7 @@
     align-items: center;
 }
 
-.submenu_item:hover {
+.submenu-item:hover {
     background: #F5F5F5;
 }
 
