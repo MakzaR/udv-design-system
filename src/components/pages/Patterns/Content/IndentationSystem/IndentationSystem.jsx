@@ -1,5 +1,7 @@
 import React from "react";
 import p from './IndentationSystem.module.css';
+import ISImage from '../../../../../images/ISImage.jpg';
+
 
 const IndentationSystem = () => {
     return (
@@ -10,15 +12,13 @@ const IndentationSystem = () => {
                 систему вертикальных отступов, кратных 8 пикселям.
                 <br/>
                 <br/>
-                Используйте отступы разной величины, чтобы группировать схожее (например, заголовок и абзац текста) и отделять разные сегменты (конец абзаца и следующий заголовок).
+                Используйте отступы разной величины, чтобы группировать схожее (например, заголовок и абзац текста) и
+                отделять разные сегменты (конец абзаца и следующий заголовок).
                 <br/>
                 <br/>
                 Помните, что в одинаковых случаях следует использовать одни и те же отступы!
             </div>
-            <div className={p.image}>
-                <img src='D:\react\practice\public\IndentationSystemImage.jpg' alt={'img'}/>
-            </div>
-
+            <img src={ISImage} alt={'IndentationSystemImage.jpg'} className={p.image}/>
         </div>
     )
 }

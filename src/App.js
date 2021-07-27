@@ -4,10 +4,10 @@ import {BrowserRouter as Router, Switch, Route, Redirect} from "react-router-dom
 import Home from "./components/pages/Home/Home";
 import Components from "./components/pages/ReactComponents/Components";
 import Figma from "./components/pages/Figma/Figma";
-import Patterns from "./components/pages/Patterns/Patterns";
+import Patterns from "./components/pages/patterns/Patterns";
 import UX from "./components/pages/UX/UX";
 import Research from "./components/pages/Research/Research";
-import Articles from "./components/pages/Articles/Articles";
+import Articles from "./components/pages/articles/Articles";
 
 function App() {
   return (
