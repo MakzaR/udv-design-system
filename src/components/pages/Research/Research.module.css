@@ -1,0 +1,40 @@
+.research_page {
+    display: grid;
+    grid-template-areas: "navbar"
+                         "content";
+    grid-auto-rows: 100px auto;
+}
+
+.line_dark {
+    position: absolute;
+    top: 90px;
+    width: 64px;
+    height: 0;
+    border: 1px solid #000000;
+    margin-left: 130px;
+}
+
+.navbar {
+    grid-area: navbar;
+    z-index: 10;
+}
+
+.research_content {
+    grid-area: content;
+    display: grid;
+    grid-template-areas: "heading"
+                         "filters"
+                         "articles";
+    grid-auto-rows: 75px 65px auto;
+}
+
+.heading {
+    grid-area: heading;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 65px;
+    color: #000000;
+    margin-left: 130px;
+    margin-top: 10px;
+}

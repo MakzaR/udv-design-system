@@ -28,10 +28,6 @@
     grid-auto-rows: 75px 65px auto;
 }
 
-.page {
-    text-align: left;
-}
-
 .heading {
     grid-area: heading;
     font-style: normal;
