@@ -1,4 +1,4 @@
-.main-page {
+.main_page {
     display: grid;
     grid-template-areas: "navbar"
                          "content";
@@ -7,14 +7,14 @@
     min-height: 100vh;
 }
 
-.line-light {
+.line_light {
     width: 64px;
     height: 0;
     border: 1px solid #8C8C8C;
     margin-left: 130px;
 }
 
-.content {
+.home_content {
     grid-area: content;
     position: fixed;
     top: 100px;
@@ -27,7 +27,7 @@
                          "footer footer";
     grid-auto-rows: 170px 590px 94px;
     padding-left: 130px;
-    /*z-index: 1;*/
+    z-index: 1;
 }
 
 .navbar {
@@ -56,7 +56,7 @@
     margin-top: 10px;
 }
 
-.main-title {
+.main_title {
     grid-area: main;
     padding-top: 90px;
     font-weight: 800;
@@ -99,13 +99,13 @@
     font-weight: 900;
 }
 
-.num-text {
+.num_text {
     color: #00D29D;
     font-size: 16px;
     font-weight: 600;
 }
 
-.point-text {
+.point_text {
     display: none;
 }
 
@@ -116,13 +116,13 @@
     color: #6B6B6B;
 }
 
-.num-text.first {
+.num_text.first {
     position: absolute;
     left: 1412px;
     top: 205px;
 }
 
-.point-text.first {
+.point_text.first {
     position: absolute;
     left: 1453px;
     top: 256px;
@@ -135,13 +135,13 @@
     color: #7D7D7D;
 }
 
-.num-text.second {
+.num_text.second {
     position: absolute;
     left: 1221px;
     top: 401px;
 }
 
-.point-text.second {
+.point_text.second {
     position: absolute;
     left: 1351px;
     top: 354px;
@@ -154,17 +154,17 @@
     color: #5A5A5A;
 }
 
-.num-text.third {
+.num_text.third {
     position: absolute;
     left: 1508px;
     top: 491px;
 }
 
-.start-padding {
+.start_padding {
     padding-left: 50px;
 }
 
-.point-text.third {
+.point_text.third {
     position: absolute;
     left: 1362px;
     top: 540px;
@@ -177,13 +177,13 @@
     color: #7B7B7B;
 }
 
-.num-text.fourth {
+.num_text.fourth {
     position: absolute;
     left: 1128px;
     top: 640px;
 }
 
-.point-text.fourth {
+.point_text.fourth {
     position: absolute;
     left: 1342px;
     top: 665px;
@@ -196,7 +196,7 @@
     cursor: default;
 }
 
-.point:hover .point-text {
+.point:hover .point_text {
     display: block;
     color: #A2A2A2;
     font-size: 16px;

@@ -1,6 +1,6 @@
 import {NavLink, useLocation} from "react-router-dom";
 
-import "./Navbar.css";
+import styles from "./Navbar.module.css";
 import Submenu from "./Submenu";
 
 export default function Navbar() {
@@ -13,43 +13,43 @@ export default function Navbar() {
     }
 
     return (
-        <div className={checkPage("components", "navbar", "grey")}>
-            <div className="name">
+        <div className={checkPage("components", `${styles.navbar}`, `${styles.grey}`)}>
+            <div className={styles.name}>
                 <NavLink to='/home'
-                         className={checkPage("home", "logo", "green")}>
+                         className={checkPage("home", `${styles.logo}`, `${styles.green}`)}>
                     UDV
                 </NavLink>
                 <span
-                    className={checkPage("home", "system-name", "light")}>
+                    className={checkPage("home", `${styles.system_name}`, `${styles.light}`)}>
                     Дизайн-система
                 </span>
             </div>
-            <div className="menu">
-                <NavLink to='/components' id="components"
-                         className={checkPage("home", "item", "light")}
-                         activeClassName="activeLink components">
+            <div className={styles.menu}>
+                <NavLink to='/components' id={styles.components}
+                         className={checkPage("home", `${styles.item}`, `${styles.light}`)}
+                         activeClassName={`${styles.activeLink} ${styles.components}`}>
                     Компоненты
-                    <span className={checkPage("components", "polygon", "green")}/>
+                    <span className={checkPage("components", `${styles.polygon}`, `${styles.green}`)}/>
                     <Submenu/>
                 </NavLink>
                 <NavLink to='/patterns'
-                         className={checkPage("home", "item", "light")}
-                         activeClassName="activeLink">
+                         className={checkPage("home", `${styles.item}`, `${styles.light}`)}
+                         activeClassName={styles.activeLink}>
                     Паттерны
                 </NavLink>
                 <NavLink to='/ux'
-                         className={checkPage("home", "item", "light")}
-                         activeClassName="activeLink">
+                         className={checkPage("home", `${styles.item}`, `${styles.light}`)}
+                         activeClassName={styles.activeLink}>
                     Принципы UX
                 </NavLink>
                 <NavLink to='/research'
-                         className={checkPage("home", "item", "light")}
-                         activeClassName="activeLink">
+                         className={checkPage("home", `${styles.item}`, `${styles.light}`)}
+                         activeClassName={styles.activeLink}>
                     Исследования
                 </NavLink>
                 <NavLink to='/articles'
-                         className={checkPage("home", "item", "light")}
-                         activeClassName="activeLink">
+                         className={checkPage("home", `${styles.item}`, `${styles.light}`)}
+                         activeClassName={styles.activeLink}>
                     Статьи
                 </NavLink>
             </div>

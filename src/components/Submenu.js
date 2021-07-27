@@ -1,20 +1,20 @@
 import {NavLink} from "react-router-dom";
 import {ReactSVG} from "react-svg";
 
-import "./Navbar.css";
+import styles from "./Navbar.module.css";
 import components from "../assets/components.svg";
 import templates from "../assets/templates.svg";
 
 
 export default function Submenu() {
     return (
-        <div className="submenu">
-            <NavLink to='/components/react' className='submenu-item'>
-                <ReactSVG src={components} wrapper="span" className="submenu_icon react"/>
+        <div className={styles.submenu}>
+            <NavLink to='/components/react' className={styles.submenu_item}>
+                <ReactSVG src={components} wrapper="span" className={`${styles.submenu_icon} ${styles.react}`}/>
                 Компоненты на React
             </NavLink>
-            <NavLink to='/components/figma' className='submenu-item'>
-                <ReactSVG src={templates} wrapper="span" className="submenu_icon figma"/>
+            <NavLink to='/components/figma' className={styles.submenu_item}>
+                <ReactSVG src={templates} wrapper="span" className={`${styles.submenu_icon} ${styles.figma}`}/>
                 Шаблоны в Figma
             </NavLink>
         </div>

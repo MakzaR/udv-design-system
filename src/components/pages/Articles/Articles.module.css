@@ -1,0 +1,22 @@
+.articles-page {
+    display: grid;
+    grid-template-areas: "navbar"
+                         "content";
+    grid-auto-rows: 100px auto;
+}
+
+.line-dark {
+    width: 64px;
+    height: 0;
+    border: 1px solid #000000;
+    margin-left: 130px;
+}
+
+.navbar {
+    grid-area: navbar;
+    z-index: 10;
+}
+
+.articles-content {
+    grid-area: content;
+}

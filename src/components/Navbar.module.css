@@ -32,11 +32,11 @@
     padding-right: 10px;
 }
 
-.system-name {
+.system_name {
     color: #626262;
 }
 
-.system-name.light {
+.system_name.light {
     color: #BEBEBE;
 }
 
@@ -88,7 +88,7 @@
     display: none;
 }
 
-.submenu-item {
+.submenu_item {
     display: flex;
     color: #302E2E;
     font-size: 16px;
@@ -98,7 +98,7 @@
     align-items: center;
 }
 
-.submenu-item:hover {
+.submenu_item:hover {
     background: #F5F5F5;
 }
 
