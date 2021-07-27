@@ -1,0 +1,14 @@
+.line_dark {
+    position: absolute;
+    top: 90px;
+    width: 64px;
+    height: 0;
+    border: 1px solid #000000;
+    margin-left: 130px;
+}
+
+.work_in_progress {
+    margin-left: 130px;
+    padding-top: 200px;
+    font-size: 48px;
+}
