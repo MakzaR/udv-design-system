@@ -10,25 +10,25 @@ import Research from "./components/pages/Research/Research";
 import Articles from "./components/pages/Articles/Articles";
 
 function App() {
-  return (
-    <div className="App">
-      <Router>
-        <Switch>
-            <Route path='/home' component={Home}/>
-            <Route path='/components/react' component={Components}/>
-            <Route path='/components/figma' component={Figma}/>
-            <Route path='/patterns' component={Patterns}/>
-            <Route path='/ux' component={UX}/>
-            <Route path='/research' component={Research}/>
-            <Route path='/articles' component={Articles}/>
+    return (
+        <div className="App">
+            <Router>
+                <Switch>
+                    <Route path='/home' component={Home}/>
+                    <Route path='/components/react' component={Components}/>
+                    <Route path='/components/figma' component={Figma}/>
+                    <Route path='/patterns' component={Patterns}/>
+                    <Route path='/ux' component={UX}/>
+                    <Route path='/research' component={Research}/>
+                    <Route path='/articles' component={Articles}/>
 
-            <Redirect from='/components' to='/components/react'/>
-            <Redirect from='/' to='/home'/>
+                    <Redirect from='/components' to='/components/react'/>
+                    <Redirect from='/' to='/home'/>
 
-        </Switch>
-      </Router>
-    </div>
-  );
+                </Switch>
+            </Router>
+        </div>
+    );
 }
 
 export default App;
