@@ -104,15 +104,16 @@
 
 .react {
     padding-left: 10px;
-    margin-right: 10px;
+    margin-right: -1px;
 }
 
 .figma {
     padding-left: 17px;
-    margin-right: 15px;
+    margin-right: 3px;
 }
 
 #components:hover .submenu {
+    z-index: 10;
     display: grid;
     box-sizing: border-box;
     grid-template-areas: "react"

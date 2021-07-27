@@ -27,7 +27,6 @@
                          "footer footer";
     grid-auto-rows: 170px 590px 94px;
     padding-left: 130px;
-    z-index: 1;
 }
 
 .navbar {
@@ -37,6 +36,7 @@
 
 .header {
     grid-area: header;
+    z-index: 1;
 }
 
 .header h1 {

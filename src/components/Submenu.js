@@ -10,11 +10,11 @@ export default function Submenu() {
     return (
         <div className={styles.submenu}>
             <NavLink to='/components/react' className={styles.submenu_item}>
-                <ReactSVG src={components} wrapper="span" className={`${styles.submenu_icon} ${styles.react}`}/>
+                <ReactSVG src={components} wrapper="span" className={styles.react}/>
                 Компоненты на React
             </NavLink>
             <NavLink to='/components/figma' className={styles.submenu_item}>
-                <ReactSVG src={templates} wrapper="span" className={`${styles.submenu_icon} ${styles.figma}`}/>
+                <ReactSVG src={templates} wrapper="span" className={styles.figma}/>
                 Шаблоны в Figma
             </NavLink>
         </div>
