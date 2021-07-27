@@ -1,0 +1,44 @@
+.patterns_page {
+    display: grid;
+    grid-template-areas: "navbar"
+                         "content";
+    grid-auto-rows: 100px auto;
+}
+
+.line_dark {
+    position: absolute;
+    top: 90px;
+    width: 64px;
+    height: 0;
+    border: 1px solid #000000;
+    margin-left: 130px;
+}
+
+.navbar {
+    grid-area: navbar;
+    z-index: 10;
+}
+
+.patterns_content {
+    grid-area: content;
+    display: grid;
+    grid-template-areas: "heading"
+                         "navigation"
+                         "content";
+    grid-auto-rows: 75px 65px auto;
+    margin-left: 130px;
+}
+
+.heading {
+    grid-area: heading;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 65px;
+    color: #000000;
+    margin-top: 10px;
+}
+
+.navigation {
+    grid-area: navigation;
+    margin-top: 30px;
+}

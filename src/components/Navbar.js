@@ -37,7 +37,7 @@ export default function Navbar() {
                          activeClassName={styles.activeLink}>
                     Паттерны
                 </NavLink>
-                <NavLink to='/ux'
+                <NavLink to='/UX'
                          className={checkPage("home", `${styles.item}`, `${styles.light}`)}
                          activeClassName={styles.activeLink}>
                     Принципы UX

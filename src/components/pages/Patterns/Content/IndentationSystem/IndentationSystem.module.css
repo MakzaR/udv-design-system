@@ -1,0 +1,15 @@
+.textContent {
+    color: #626262;
+    max-width: 1140px;
+    margin-top: 40px;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+p {
+    margin-bottom: 30px;
+}
+
+.image {
+    margin-top: 50px;
+}

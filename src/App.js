@@ -15,14 +15,14 @@ function App() {
             <Router>
                 <Switch>
                     <Route path='/home' component={Home}/>
-                    <Route path='/components/react' component={Components}/>
-                    <Route path='/components/figma' component={Figma}/>
+                    <Route path='/components/React' component={Components}/>
+                    <Route path='/components/Figma' component={Figma}/>
                     <Route path='/patterns' component={Patterns}/>
-                    <Route path='/ux' component={UX}/>
+                    <Route path='/UX' component={UX}/>
                     <Route path='/research' component={Research}/>
                     <Route path='/articles' component={Articles}/>
 
-                    <Redirect from='/components' to='/components/react'/>
+                    <Redirect from='/components' to='/components/React'/>
                     <Redirect from='/' to='/home'/>
 
                 </Switch>

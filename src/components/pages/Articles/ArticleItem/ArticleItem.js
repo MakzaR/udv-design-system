@@ -4,8 +4,8 @@ import styles from "./ArticleItem.module.css";
 
 export default function ArticleItem(props) {
 
-    return(
-        <div className={styles.content}>
+    return (
+        <div>
             <div className={styles.item}>
                 <div>
                     <div className={styles.image}>
