@@ -25,9 +25,15 @@ svg {
     margin: 0 13px 0 0;
 }
 
-.content {
-    padding: 0 0px 0 130px;
+/*.content {
+    padding: 0 0 0 130px;
     background-color: #F3F3F3;
     display: flex;
     flex-wrap: wrap;
+}*/
+.content {
+    padding: 0 0 0 130px;
+    background-color: #F3F3F3;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(802px, 1fr));
 }

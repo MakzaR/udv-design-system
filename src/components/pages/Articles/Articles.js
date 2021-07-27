@@ -2,12 +2,16 @@ import React from 'react';
 import p from './articles.module.css';
 import ArticleItem from "./ArticleItem/ArticleItem";
 import Navbar from "../../Navbar";
+import image1 from '../../../images/articles1.jpg';
+import image2 from '../../../images/articles2.jpg';
+import image3 from '../../../images/articles3.jpg';
+import image4 from '../../../images/articles4.jpg';
 
 const Articles = () => {
     let ArticlesPage = [
         {
             id: 1,
-            image: 'articles1.jpg',
+            image: image1,
             header: 'Неоморфизм: почему у тренда с хорошим UI плохой UX?',
             text: 'Всем известный тренд с приятной визуальной составляющей, тем не менее, имеет достаточно низкие показатели юзабилити. Почему так происходит?',
             writerName: 'Иванова Ольга',
@@ -16,7 +20,7 @@ const Articles = () => {
         },
         {
             id: 2,
-            image: 'articles2.jpg',
+            image: image2,
             header: 'Как спроектировать лучший дашборд? Реальный кейс',
             text: 'Каких правил необходимо придерживаться чтобы дашборд приносил пользу и помогал работать эффективнее. Делюсь опытом на основе реального кейса.',
             writerName: 'Иванова Ольга',
@@ -25,7 +29,7 @@ const Articles = () => {
         },
         {
             id: 1,
-            image: 'articles3.jpg',
+            image: image3,
             header: 'Как спроектировать лучший дашборд? Реальный кейс',
             text: 'Каких правил необходимо придерживаться чтобы дашборд приносил пользу и помогал работать эффективнее. Делюсь опытом на основе реального кейса.',
             writerName: 'Иванова Ольга',
@@ -34,7 +38,7 @@ const Articles = () => {
         },
         {
             id: 1,
-            image: 'articles4.jpg',
+            image: image4,
             header: 'Дайджест: лучшие мобильные интерфейсы за декабрь 2020',
             text: 'Новое приложение Золотого Яблока обновление от Тинькофф, новые игроки в сфере EdTech и другие любопытные проекты, которые стоит увидеть!',
             writerName: 'Иванова Ольга',
