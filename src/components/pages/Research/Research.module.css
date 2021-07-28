@@ -23,9 +23,11 @@
     grid-area: content;
     display: grid;
     grid-template-areas: "heading"
-                         "filters"
-                         "articles";
-    grid-auto-rows: 75px 65px auto;
+                         "info"
+                         "table"
+                         "note";
+    grid-auto-rows: 75px 150px auto auto;
+    margin-left: 130px;
 }
 
 .heading {
@@ -35,6 +37,29 @@
     font-size: 48px;
     line-height: 65px;
     color: #000000;
-    margin-left: 130px;
     margin-top: 10px;
+}
+
+.info {
+    grid-area: info;
+    color: #626262;
+    max-width: 1075px;
+    margin-top: 30px;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.info_text {
+    margin-bottom: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #00B98A;
+    font-weight: 600;
+}
+
+.table {
+    grid-area: table;
+    padding-top: 15px;
 }

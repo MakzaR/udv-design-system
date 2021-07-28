@@ -61,8 +61,8 @@ svg {
 
 .articles {
     grid-area: articles;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(802px, 1fr));
     padding-left: 130px;
     background-color: #F3F3F3;
 }
