@@ -54,3 +54,35 @@ tr:last-child:hover td{
 .fourthColumn {
     width: 90px;
 }
+
+td.firstColumn {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    color: #404040;
+    padding-left: 20px;
+}
+
+th.secondColumn {
+    padding-left: 30px;
+}
+
+td.secondColumn {
+    padding-left: 80px;
+}
+
+td.thirdColumn {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: #404040;
+    padding-left: 70px;
+}
+
+.arrow {
+    visibility: hidden;
+}
+
+tr:hover .arrow {
+    visibility: visible;
+}
