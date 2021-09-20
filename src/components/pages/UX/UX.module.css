@@ -1,3 +1,15 @@
+.ux_page {
+    display: grid;
+    grid-template-areas: "navbar"
+                         "content";
+    grid-auto-rows: 100px auto;
+}
+
+.navbar {
+    grid-area: navbar;
+    z-index: 10;
+}
+
 .line_dark {
     position: absolute;
     top: 90px;
@@ -7,8 +19,41 @@
     margin-left: 130px;
 }
 
-.work_in_progress {
-    margin-left: 130px;
-    padding-top: 200px;
+.ux_content {
+    grid-area: content;
+    display: grid;
+    grid-template-areas: "heading"
+                         "info"
+                         "cards";
+    grid-auto-rows: 75px 150px auto;
+    /*margin-left: 130px;*/
+}
+
+.heading {
+    grid-area: heading;
+    font-style: normal;
+    font-weight: 600;
     font-size: 48px;
+    line-height: 65px;
+    color: #000000;
+    margin-top: 10px;
+    margin-left: 130px;
+}
+
+.info {
+    grid-area: info;
+    color: #626262;
+    max-width: 1075px;
+    margin-top: 30px;
+    font-size: 16px;
+    line-height: 22px;
+    margin-left: 130px;
+}
+
+.info_text {
+    margin-bottom: 20px;
+}
+
+.cards {
+    grid-area: cards;
 }

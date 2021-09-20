@@ -1,7 +1,6 @@
 import React from "react";
 import {ReactSVG} from "react-svg";
 
-
 import Navbar from "../../Navbar";
 import Table from "./Table/Table";
 

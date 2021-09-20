@@ -1,0 +1,168 @@
+.slider {
+    margin: 0 160px;
+    overflow-x: hidden;
+    margin-bottom: 100px;
+    margin-top: 30px;
+}
+
+.slider_container {
+    width: 100%;
+}
+
+.slick-slide.slick-active {
+    z-index: 300;
+    margin-left: -600px;
+    margin-right: 0px;
+
+}
+
+/* Слайд основной */
+.slick-slide.slick-current .slider__item {
+    background: #ffffff;
+    z-index: 300;
+    max-width: 800px;
+    width: 790px !important;
+    height: 650px;
+    box-shadow: -1px 4px 8px 0px rgba(15, 26, 34, 0.349);
+    filter: blur(0);
+    margin-left: 330px;
+}
+
+
+/* the parent */
+.slick-list {
+    margin: 0 390px;
+}
+
+
+/* Слайд */
+.slick-slide {
+    margin-left: 100px;
+    margin-right: -80px;
+}
+
+.slider__item {
+    max-width: 650px;
+    height: 500px;
+    background: #F3F3F3;
+    filter: blur(1.5px);
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    z-index: 50;
+    display: inline;
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 39px 39px 16px 52px;
+    box-sizing: border-box;
+
+}
+
+/* Лента слайдов */
+.slick-track {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* Слайд по центру */
+.slick-slide.slick-center {
+    opacity: 1;
+}
+
+/* Стрелка */
+.slick-arrow {
+    position: absolute;
+    top: 60%;
+    z-index: 10;
+    width: 18px;
+    height: 36px;
+    font-size: 0;
+    border: 0px;
+    padding: 0;
+
+}
+
+/* Стрелка влево */
+.slick-arrow.slick-prev {
+    left: 0;
+    background: url(./arrow_left.svg) 0 0 / 100% no-repeat;
+    margin-left: 100px;
+    margin-right: 38px;
+}
+
+/* Стрелка вправо */
+.slick-arrow.slick-next {
+    right: 0;
+    background: url(./arrow_right.svg) 0 0 / 100% no-repeat;
+    margin-right: 100px;
+    margin-left: 38px;
+}
+
+.slick-slide.slick-current .card_title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: #00D29D;
+    font-family: "Roboto";
+}
+
+.slick-slide.slick-current .card_text {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 28px;
+    color: #343434;
+
+    margin-top: 28px;
+    line-height: 28px;
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.slick-slide.slick-current ol {
+    margin-left: -25px;
+    margin-top: 7px;
+}
+
+.slick-slide.slick-current li {
+    margin-top: 7px;
+}
+
+.slick-slide.slick-current .image_for_card {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -30px;
+    width: 470px;
+    filter: invert(0);
+}
+
+.image_for_card {
+    width: 300px;
+    filter: invert(0.05);
+}
+
+.slider__item .card_title {
+    color: #757575;
+    font-family: "Roboto", "Arial", sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.slider__item .card_text {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    color: #7E7E7E;
+    margin-top: 16px;
+    line-height: 28px;
+}
+
+li {
+    margin-left: 40px
+}
