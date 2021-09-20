@@ -10,7 +10,7 @@
 
 .slick-slide.slick-active {
     z-index: 300;
-    margin-left: -600px;
+    margin-left: -400px;
     margin-right: 0;
 
 }
