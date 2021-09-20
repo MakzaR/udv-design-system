@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import {ReactSVG} from "react-svg";
 
 import styles from "./Table.module.css";
@@ -7,8 +7,11 @@ import one from "../../../../assets/one.svg";
 import two from "../../../../assets/two.svg";
 import three from "../../../../assets/three.svg";
 import arrow from "../../../../assets/arrow.svg";
+import Modal from "../Modal/Modal";
 
 export default function Table() {
+    const [modalActive, setModalActive] = useState(true);
+
     return (
         <div>
             <table>
@@ -125,7 +128,7 @@ export default function Table() {
                         <ReactSVG src={arrow} className={styles.arrow}/>
                     </td>
                 </tr>
-                <tr>
+                <tr onClick={() => setModalActive(true)}>
                     <td className={styles.firstColumn}>Юзабилити-тестирование</td>
                     <td className={styles.secondColumn}>
                         <ReactSVG src={two} wrapper="span"/>
@@ -139,6 +142,7 @@ export default function Table() {
                 </tr>
                 </tbody>
             </table>
+            <Modal active={modalActive} setActive={setModalActive}/>
         </div>
     )
 }
