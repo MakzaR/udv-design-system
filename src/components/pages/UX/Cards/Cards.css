@@ -1,6 +1,7 @@
 .slider {
     margin: 30px 160px 100px 160px;
     overflow-x: hidden;
+    padding: 0;
 }
 
 .slider_container {
@@ -21,7 +22,7 @@
     max-width: 800px;
     width: 790px !important;
     height: 650px;
-    box-shadow: -1px 4px 8px 0 rgba(15, 26, 34, 0.349);
+    box-shadow: 0 4px 8px 0 rgba(15, 26, 34, 0.349);
     filter: blur(0);
     margin-left: 330px;
 }
@@ -132,7 +133,6 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: -30px;
     width: 470px;
     filter: invert(0);
 }
@@ -159,6 +159,16 @@
     line-height: 28px;
 }
 
-li {
-    margin-left: 40px;
+.card_number {
+    margin-right: 10px;
+}
+
+.how_to_achieve {
+    font-weight: 600;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.card_item {
+    margin-top: 5px;
 }
